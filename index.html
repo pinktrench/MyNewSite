@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SanSurm</title>
+    <link rel="stylesheet" href="1/style.css">
+</head>
+<body>
+    <header>
+        <div class="container1">
+            <ul class="topMenu">
+                <li>
+                  <ul class="custom-menu">
+                    <li class="custom-item1"><a href="#MENU">MENU</a>
+                        <nav class="submenu">
+                            <ul>
+                                <li><a href="#link1">INSTAGRAM</a></li>
+                                <li><a href="#link2">CONTACT</a></li>
+                                <li><a href="#link3">INTERVIEWS</a></li>
+                                <li><a href="#link3">FASHION SHOWS</a></li>
+                                <li><a href="#link3">LINKS</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                        <li class="custom-item"><a href="#SHOPWOMEN">SHOP WOMEN</a></li>
+                        <li class="custom-item"><a href="#SHOPMEN">SHOP MEN</a></li>  
+                        <li class="custom-item"><a href="#SHOPKIDS">SHOP KIDS</a></li>  
+                        <li class="custom-item"><a href="#NEWARRIVALSWOMEN">NEW ARRIVALS WOMEN</a></li> 
+                    </ul>
+                </li>
+                <li class="custom-item2"><a href ="#index.html"><img src="1/pngs/imSam.png" alt="RICK OWENS" width="220" height="25"></a></li>
+                <li class="custom-item3">SEARCH
+                    <input type="text" class="searchBar">
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="container2">
+            <nav class="sideMenu">
+                <ul>
+                    <li><a href="#index">NEW ARRIVALS MEN</a></li>
+                    <li><a href="#index">VIEW ALL</a></li> 
+                    <li><a href="#index">FW23 LUXOR</a></li>
+                    <li><a href="#index">SS23 EDFU</a></li>
+                    <li>DRKSHDW</li>
+                    <li>BABY GEO</li>
+                    <li>CHAMPION</li> 
+                    <li>DR. MARTENS</li> 
+                    <li>CONVERSE</li> 
+                    <li>SHOES</li> 
+                    <li>EYEWEAR</li>
+                    <li>BAGS</li> 
+                    <li>JEWELRY</li> 
+                    <li>BOOKS</li> 
+                    <li>OBJECTS</li> 
+                    <li>ECO-AWARE</li>      
+                </ul>
+            </nav>
+            <a class="video-container1" href="catalog.html">
+                <div class="video-overlay">
+                    <p class="video-text">CHAMPION X RICK OWENS</p>
+                  </div>
+                <video class="video-item" src="1/vids/2.mp4" muted autoplay loop></video>
+            </a>
+            <a class="video-container2" href="index.html">
+                <div class="video-overlay">
+                    <p class="video-text">DIAMOND X RICK OWENS</p>
+                  </div>
+                <video class="video-item" src="1/vids/3.mp4" muted autoplay loop></video>
+            </a>
+
+            <div>
+                <nav class="footer">
+                    <ul>
+                        <li>DESOLATOR</li>
+                        <li>PRIVACY&COOKIE POLICY</li>
+                        <li>WI-922</li>
+                        <LI>GENERATION</LI>
+                        <LI>UU-Y.Y1</LI>
+                        <LI>GEOGRAPHY</LI>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="topBtn"></button>
+
+        
+        <script>
+
+            window.onscroll = function() {scrollFunction(); scrollFunction1();};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("topBtn").style.display = "block";
+                    let searchBar = document.querySelector(".searchBar");
+                    searchBar.style.borderBottom = "1px solid black";
+                } else {
+                    document.getElementById("topBtn").style.display = "none";
+                    let searchBar = document.querySelector(".searchBar");
+                    searchBar.style.borderBottom = "1px solid salmon";
+                }
+            }
+            
+            function scrollFunction1() {
+                if (document.body.scrollTop > 1350 || document.documentElement.scrollTop > 1350) {
+                    let topMenu = document.querySelector(".topMenu");
+                    topMenu.style.position = "static";
+
+                } else {
+                    let topMenu = document.querySelector(".topMenu");
+                    topMenu.style.position = "fixed";
+                }
+            }
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+            
+        </script>
+    </main>
+</html>

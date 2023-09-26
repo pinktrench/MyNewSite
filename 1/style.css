@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    ::selection {background-color: brown;}
+    color: black;
+}
+.container1{
+    width: 100%;
+    height: 110px;
+    background-color: rgb(255, 255, 255);
+    font-family: arial, source-sans-pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container2{
+    width: 100%;
+    height: 2250px;
+    background-color:white;
+    font-family: arial, source-sans-pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.topMenu{
+    position: fixed;
+    z-index: 3;
+    list-style-type: none;
+    display: flex;
+    justify-content:space-between;
+    /* background-color: white; */
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0.8) 100%);
+    width: 100%;
+    text-align:justify;
+    padding: 22px 20px 22px 20px;
+    font-size: 10px;
+    letter-spacing: 4px;
+}
+.topMenu li{
+    display: inline-block;
+}
+.custom-item{
+    
+    border-left: solid 1px black;
+    padding-left: 12px;
+}
+.custom-item1{
+    
+    padding-left: 0px;
+    border-left: 0px;
+}
+.custom-item2{
+    position: static;
+    border-left: 0px;
+    margin: 0 auto;
+    flex: 0.63 1 160px;
+}
+.custom-item3{
+    border-left: 0px;
+    text-align: right;
+    float: right;
+    transition: all cubic-bezier(0.55, 0.085, 0.68, 0.53) 0.8s ;
+    
+}
+.custom-item3:hover{
+    color: salmon;
+    letter-spacing: 3.5px;
+    cursor: pointer;
+}
+.sideMenu{
+    position: absolute;
+    z-index: 2;
+    top: 110px;
+    left: 20px;
+    
+}
+.sideMenu li{
+    list-style-type: none;
+    margin: 8px 0px 8px 0;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+.video-container1{
+    position: relative;
+    left: 13%;
+    z-index: 1;
+    width: 86%;
+    padding: 22px 0 0 0;
+    display: inline-block;
+}
+.video-container2{
+    position:relative;
+    top: 60px;
+    left: 13%;
+    z-index: 1;
+    width: 86%;
+    padding: 22px 0 0 0;
+    display: inline-block;
+}
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+  }
+  .video-container1:hover .video-overlay {
+    opacity: 1;
+  }
+  .video-container2:hover .video-overlay {
+    opacity: 1;
+  }
+  .video-text {
+    color: black;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 28px;
+    letter-spacing: 12px;
+  }
+
+
+.video-item{
+    
+    width: 100%;
+    height: auto;
+}
+.custom-menu {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 3;
+  background-color: #ffffff;
+  padding: 20px 80px 20px 0;
+  list-style:none;
+}
+.submenu li{
+    display: block;
+    list-style-type: none;
+    padding: 16px 5px 16px 5px;
+    letter-spacing: 4px;
+}
+.submenu li:hover{
+    /* background-color: rgb(216, 130, 130); */
+    background-color: salmon;
+}
+.custom-item1:hover .submenu {
+  display: block;
+}
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    z-index: 4;
+    border: none; 
+    outline: none;
+    background-color: #ffffff00;
+    background-image: url("pngs/back2top.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    padding: 15px;
+    opacity: 0.5;
+    transition: opacity 0.4s ease-in-out;
+}
+
+#topBtn:hover {
+    opacity: 1;
+}
+.searchBar{
+    display: block;
+    position: relative;
+    font-family: arial, source-sans-pro, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    top: -65%;
+    right: 65%;
+    z-index: 3;
+    width: 100%;
+    height: 17px;
+    transition:  0.4s ease-in-out;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 5px 5px 5px 0px;
+    border: none;
+    border-bottom: 1px solid salmon;
+    outline: none;
+}
+.footer{
+    position: absolute;
+    bottom: -1400px;
+    right: 0px;
+    width: 60%;
+    z-index: 2;
+    list-style-type: none;
+    
+    display: flex;
+    float: right;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background: white;
+    text-align: justify;
+    padding: 22px 20px 22px 20px;
+    font-size: 11px;
+    letter-spacing: 4px;
+    
+}
+.footer li{
+    display: inline-block;
+    border-left: black solid 1px;
+    padding-left: 12px;
+
+}
+a {
+    color: inherit; /* Унаследовать цвет текста от родительского элемента */
+  }

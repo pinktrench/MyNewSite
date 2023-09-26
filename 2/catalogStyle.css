@@ -1,0 +1,103 @@
+.custom-item2{
+    position: static;
+    border-left: 0px;
+    margin: 0 auto;
+    flex: 0 1 220px;
+}
+.sideMenuBtn{
+    display: block;
+    padding: 7px 14px;
+    margin: 0px 20px 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.sideMenu{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 150px;
+    left: 20px;
+    
+}
+.sideMenu li{
+    list-style-type: none;
+    margin: 8px 0px 8px 0;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+.sideMenu li.custom-li{
+    list-style-type: none;
+    margin: 24px 0px 8px 0;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: salmon !important;
+    
+}
+.product-content{
+    display: block;
+    position: absolute;
+    top: 140px;
+    left: 280px;
+    width: 1500px;
+    height: 1800px;
+    padding-right: 20px;
+    /* background-color: blueviolet; */
+}
+.product{
+    display: block;
+    float: left;
+    position: relative;
+    width: 300px; height: 520px;
+    margin: 0 70px 12px 0;
+    /* background-color: blanchedalmond; */
+}
+.product-link{
+    display: block;
+    width: 300px; height: 600px;
+    
+}
+.brand-name{
+    font-size: 14px;
+    font-family: 'arial', source-sans-pro, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: 2.5px;
+    line-height: 18px;
+}
+.category{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    line-height: 18px;
+}
+.price{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    line-height: 16px;
+}
+
+figcaption{
+    margin-top: 5px;
+}
+.first-image{
+    display: block;
+}
+/* Скрыть вторую картинку по умолчанию */
+.second-image {
+    display: none;
+}
+
+/* Показать вторую картинку при наведении на .product-link */
+.product-link:hover .first-image {
+    display: none;
+} 
+.product-link:hover .second-image {
+    display: block;
+} 
+
+/* Стили для картинок (измените на свои значения) */
